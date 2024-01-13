@@ -1,0 +1,19 @@
+File,Num Nan,Total Genes,Percent Nan in File
+
+abricate_argannot_both_ARO_mapping.tsv,10,2225,0.44943820224719105%
+
+abricate_megares_both_ARO_mapping.tsv,397,7962,4.986184375784979%
+
+abricate_ncbi_both_ARO_mapping.tsv,228,7324,3.113052976515565%
+
+abricate_resfinder_both_ARO_mapping.tsv,77,3229,2.384639207184887%
+
+amrfinderplus_ncbi_both_ARO_mapping.tsv,228,7324,3.113052976515565%
+
+argsoap_sarg_orfs_ARO_mapping.tsv,28,1244,2.2508038585209005%
+
+argsoap_sarg_reads_ARO_mapping.tsv,270,12085,2.2341745966073643%
+
+deeparg_deeparg_both_ARO_mapping.tsv,293,12279,2.3861878003094716%
+
+resfinder_resfinder_both_ARO_mapping.tsv,77,3229,2.384639207184887%
