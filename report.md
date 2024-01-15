@@ -24,11 +24,11 @@
 * SARG (argsoap, reads): 270
 * DeepARG (deeparg): 293
 
-## Number of genes that aren't mapped to ARO - 741
+## Number of genes that aren't mapped to a direct ARO - 735
 
 * abricate_argannot_both_manual_curation.tsv: 4
 * abricate_megares_both_manual_curation.tsv: 147
-* argsoap_sarg_orfs_manual_curation.tsv: 14
+* argsoap_sarg_orfs_manual_curation.tsv: 8
 * argsoap_sarg_reads_manual_curation.tsv: 270
 * deeparg_deeparg_both_manual_curation.tsv: 64
 * ncbi_manual_curation.tsv: 219
