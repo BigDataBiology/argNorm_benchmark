@@ -1,12 +1,5 @@
 import pandas as pd
 import os
-import csv
-
-def create_csv_files(output_file_name, field_names, data):
-    with open(output_file_name, 'w') as csvfile:
-        writer = csv.DictWriter(csvfile, fieldnames=field_names)
-        writer.writeheader()
-        writer.writerows(data)
 
 def get_count_not_mapped():
     data = []
@@ -26,7 +19,6 @@ def get_count_not_mapped():
             'File': file,
             'Num Not Mapped': count,
         })
-
-    create_csv_files('num_not_mapped.csv', ['File', 'Num Not Mapped'], data)
+    pd.DataFrame(data).to_csv('num_not_mapped.csv', index=False)
 
 get_count_not_mapped()
