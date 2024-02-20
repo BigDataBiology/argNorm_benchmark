@@ -1,6 +1,4 @@
-> Note: '*' and '**' indicate double count
-
-## Total number of genes that argNorm handles - 56901
+## Number of ARGs
 
 * ARG-ANNOT (abricate): 2225
 * MEGARes (abricate): 7962
@@ -12,7 +10,27 @@
 * SARG (argsoap, reads): 12085
 * DeepARG (deeparg): 12279
 
-## Total number of ARO:NaNs - 1608
+## Number of Unique AROs
+
+* abricate_argannot_both_manual_curation.tsv: 2029
+* abricate_megares_both_manual_curation.tsv: 4012
+* argsoap_sarg_orfs_manual_curation.tsv: 1231
+* argsoap_sarg_reads_manual_curation.tsv: 1811
+* deeparg_deeparg_both_manual_curation.tsv: 2366
+* ncbi_manual_curation.tsv: 4411
+* resfinder_manual_curation.tsv: 2459
+
+## Number of Unmapped ARGs
+
+* abricate_argannot_both_manual_curation.tsv: 0
+* abricate_megares_both_manual_curation.tsv: 118
+* argsoap_sarg_orfs_manual_curation.tsv: 3
+* argsoap_sarg_reads_manual_curation.tsv: 268
+* deeparg_deeparg_both_manual_curation.tsv: 6
+* ncbi_manual_curation.tsv: 205
+* resfinder_manual_curation.tsv: 2
+
+## Number of Manually Curated ARGs
 
 * ARG-ANNOT (abricate): 10
 * MEGARes (abricate): 397
@@ -23,13 +41,3 @@
 * SARG (argsoap, orfs): 28
 * SARG (argsoap, reads): 270
 * DeepARG (deeparg): 293
-
-## Number of genes that aren't mapped to a direct ARO - 735
-
-* abricate_argannot_both_manual_curation.tsv: 4
-* abricate_megares_both_manual_curation.tsv: 147
-* argsoap_sarg_orfs_manual_curation.tsv: 8
-* argsoap_sarg_reads_manual_curation.tsv: 270
-* deeparg_deeparg_both_manual_curation.tsv: 64
-* ncbi_manual_curation.tsv: 219
-* resfinder_manual_curation.tsv: 23
