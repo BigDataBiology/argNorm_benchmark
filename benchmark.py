@@ -15,7 +15,7 @@ def count_num_args():
 
     return output
 
-# print(count_num_args())
+print(count_num_args())
 
 def get_num_manual_curation():
     output = {}
@@ -26,20 +26,20 @@ def get_num_manual_curation():
 
     return output
 
-# print(get_num_manual_curation())
+print(get_num_manual_curation())
 
 def get_num_unmapped_args():
     output = {}
 
     for db in dbs:
         mapping_table = get_aro_mapping_table(db)
-        count = mapping_table['ARO'].isnull().sum().sum()
+        count = mapping_table['ARO'].isnull().sum()
 
         output.update({db: count})
 
     return output
 
-# print(get_num_manual_curation())
+print(get_num_manual_curation())
 
 def get_num_unique_args():
     output = {}
