@@ -24,3 +24,41 @@ print(pd.Series(
         name='Counts'
 ).to_frame().to_markdown())
 
+
+print(f'# Other databases')
+argannot = lib.get_aro_mapping_table('argannot').index\
+        .str.split(')')\
+        .str[0]\
+        .str.replace('(','')\
+        .str.lower() \
+        .value_counts()
+deeparg = lib.get_aro_mapping_table('deeparg').index\
+                        .str.split('|')\
+                        .str[3]\
+                        .str.lower()\
+                        .value_counts()
+megares = lib.get_aro_mapping_table('megares').index\
+                        .str.split('|')\
+                        .str[2]\
+                        .str.lower()\
+                        .value_counts()
+print(f'''## ARG-ANNOT
+
+{argannot.to_markdown()}
+
+Number of unique antibiotic classes: {argannot.shape[0]}
+
+
+## DeepARG
+
+{deeparg.to_markdown()}
+
+Number of unique antibiotic classes: {deeparg.shape[0]}
+
+## MEGARes
+
+{megares.to_markdown()}
+
+Number of unique antibiotic classes: {megares.shape[0]}
+''')
+
