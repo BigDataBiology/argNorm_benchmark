@@ -1,5 +1,10 @@
 from argnorm import lib
 import pandas as pd
+import subprocess
+import os
+
+os.makedirs('./data', exist_ok=True)
+subprocess.check_call(['bash', 'get_antibiotic_class_data.bash'])
 
 ARO = lib.get_aro_ontology()
 
@@ -16,6 +21,7 @@ print(f'''# Antibiotic molecule descendant counts
 Using ARO version bundled with argnorm {lib.__version__}
 ''')
 
+print('ARO')
 print(pd.Series(
         {'Total descendants':   nr_total_descendants,
          'Direct descendants':  nr_direct_descendants,
@@ -42,6 +48,20 @@ megares = lib.get_aro_mapping_table('megares').index\
                         .str[2]\
                         .str.lower()\
                         .value_counts()
+ncbi = lib.get_aro_mapping_table('ncbi').index\
+        .str.split('|')\
+        .str[9]\
+        .str.lower()\
+        .value_counts()
+
+sarg = pd.read_csv('./data/SARG_structure.tsv', sep='\t')['Type'].value_counts()
+
+resfinder = pd.read_csv('./data/resfinder_antibiotic_classes.tsv', sep='\t')['Class'].value_counts()
+
+resfinderfg = pd.read_csv('./data/resfinderfg_antibiotic_classes.csv', delimiter=';')
+resfinderfg.columns = [x for x in range(8)]
+resfinderfg = resfinderfg[1].value_counts()
+
 print(f'''## ARG-ANNOT
 
 {argannot.to_markdown()}
@@ -60,5 +80,24 @@ Number of unique antibiotic classes: {deeparg.shape[0]}
 {megares.to_markdown()}
 
 Number of unique antibiotic classes: {megares.shape[0]}
-''')
 
+## NCBI
+{ncbi.to_markdown()}
+
+Number of unique antibiotic classes: {ncbi.shape[0]}
+
+## SARG
+{sarg.to_markdown()}
+
+Number of unique antibiotic classes: {sarg.shape[0]}
+
+## ResFinder
+{resfinder.to_markdown()}
+
+Number of unique antibiotic classes: {resfinder.shape[0]}
+
+## ResFinderFG
+{resfinderfg.to_markdown()}
+
+Number of unique antibiotic classes: {resfinderfg.shape[0]}
+''')
