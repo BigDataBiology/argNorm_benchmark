@@ -305,3 +305,11 @@ Number of unique antibiotic classes: 32
 | TZB     |       1 |
 
 Number of unique antibiotic classes: 42
+
+# Breakdown of hit types
+
+Total number of hits: 60814
+Total # of perfect hits: 30867. This is 50.8% of the total hits.
+Total # of strict hits: 15768. This is 25.9% of the total hits.
+Total # of loose hits: 12911. This is 21.2% of the total hits.
+Total # of manual curation genes: 1268. This is 2.1% of the total hits.
