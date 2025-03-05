@@ -3,10 +3,10 @@
 ## ARO
 |                    |   Counts |
 |:-------------------|---------:|
-| Total descendants  |      602 |
-| Direct descendants |       61 |
-| Intermediate nodes |       33 |
-| Leaves             |      508 |
+| Total descendants  |      658 |
+| Direct descendants |       62 |
+| Intermediate nodes |       41 |
+| Leaves             |      555 |
 ## Other databases
 ### ARG-ANNOT
 
@@ -83,7 +83,7 @@ Number of unique antibiotic classes: 32
 | fluoroquinolones                         |     319 |
 | tetracyclines                            |     301 |
 | glycopeptides                            |     300 |
-| mls                                      |     297 |
+| mls                                      |     290 |
 | drug_and_biocide_resistance              |     189 |
 | phenicol                                 |     150 |
 | trimethoprim                             |     147 |
@@ -103,10 +103,10 @@ Number of unique antibiotic classes: 32
 | drug_and_biocide_and_metal_resistance    |       6 |
 | mupirocin                                |       5 |
 | multi-metal_resistance                   |       5 |
-| oxazolidinone                            |       4 |
+| oxazolidinone                            |       3 |
 | phenolic_compound_resistance             |       4 |
 | mercury_resistance                       |       4 |
-| pleuromutilin                            |       4 |
+| pleuromutilin                            |       3 |
 | thiopeptides                             |       2 |
 | tellurium_resistance                     |       2 |
 | spiropyrimidinetriones                   |       1 |
@@ -121,68 +121,67 @@ Number of unique antibiotic classes: 37
 ### NCBI
 | Original ID                                                    |   count |
 |:---------------------------------------------------------------|--------:|
-| beta-lactam                                                    |    4579 |
-|                                                                |    1026 |
-| aminoglycoside                                                 |     695 |
-| tetracycline                                                   |     241 |
-| glycopeptide                                                   |     236 |
-| quinolone                                                      |     139 |
-| phenicol                                                       |     131 |
-| trimethoprim                                                   |     127 |
-| colistin                                                       |     116 |
-| stx2                                                           |     113 |
+| beta-lactam                                                    |    5020 |
+| aminoglycoside                                                 |     698 |
+| tetracycline                                                   |     242 |
+| glycopeptide                                                   |     237 |
+| quinolone                                                      |     145 |
+| phenicol                                                       |     132 |
+| trimethoprim                                                   |     131 |
+| colistin                                                       |     118 |
+| stx2                                                           |     229 |
 | macrolide                                                      |      81 |
 | lincosamide/macrolide/streptogramin                            |      80 |
-| efflux                                                         |      71 |
-| fosfomycin                                                     |      64 |
+| efflux                                                         |      76 |
+| fosfomycin                                                     |      65 |
 | arsenic                                                        |      52 |
 | mercury                                                        |      48 |
-| phenicol/quinolone                                             |      43 |
+| phenicol/quinolone                                             |      44 |
 | intimin                                                        |      43 |
 | sulfonamide                                                    |      41 |
 | quaternary_ammonium                                            |      40 |
-| lincosamide                                                    |      37 |
+| lincosamide                                                    |      39 |
+| stx1                                                           |      33 |
 | copper                                                         |      26 |
 | rifamycin                                                      |      21 |
-| stx1                                                           |      20 |
 | streptogramin                                                  |      19 |
 | lincosamide/macrolide                                          |      17 |
 | streptothricin                                                 |      14 |
 | macrolide/streptogramin                                        |      13 |
 | nickel                                                         |      12 |
-| nitroimidazole                                                 |      10 |
-| aminoglycoside/quinolone                                       |      10 |
 | lincosamide/streptogramin                                      |      10 |
+| aminoglycoside/quinolone                                       |      10 |
 | bleomycin                                                      |      10 |
+| nitroimidazole                                                 |      10 |
 | phenicol/lincosamide/oxazolidinone/pleuromutilin/streptogramin |       9 |
+| lincosamide/pleuromutilin/streptogramin                        |       9 |
 | tellurium                                                      |       9 |
 | copper/silver                                                  |       8 |
 | cadmium                                                        |       7 |
-| lincosamide/pleuromutilin/streptogramin                        |       7 |
 | fusidic_acid                                                   |       7 |
 | phenicol/oxazolidinone                                         |       4 |
 | pleuromutilin                                                  |       4 |
 | mupirocin                                                      |       3 |
 | bacitracin                                                     |       3 |
-| copper/nickel                                                  |       2 |
 | thiostrepton                                                   |       2 |
-| chromate                                                       |       2 |
+| copper/nickel                                                  |       2 |
 | cadmium/cobalt/nickel                                          |       2 |
-| ionophore                                                      |       2 |
 | silver                                                         |       2 |
+| ionophore                                                      |       2 |
+| fluoroquinolone                                                |       2 |
 | tuberactinomycin                                               |       2 |
+| chromate                                                       |       2 |
+| aminoglycoside/phenicol                                        |       1 |
+| lincosamide/pleuromutilin                                      |       1 |
+| avilamycin                                                     |       1 |
+| copper/gold                                                    |       1 |
+| gold                                                           |       1 |
+| fluoride                                                       |       1 |
 | macrolide/phenicol                                             |       1 |
 | cadmium/lead/zinc                                              |       1 |
 | tetracenomycin                                                 |       1 |
-| fluoroquinolone                                                |       1 |
-| lincosamide/pleuromutilin                                      |       1 |
-| avilamycin                                                     |       1 |
-| gold                                                           |       1 |
-| copper/gold                                                    |       1 |
-| aminoglycoside/phenicol                                        |       1 |
-| fluoride                                                       |       1 |
 
-Number of unique antibiotic classes: 60
+Number of unique antibiotic classes: 59
 
 ### SARG
 | Type                                |   count |
@@ -208,15 +207,15 @@ Number of unique antibiotic classes: 60
 | fusidic_acid                        |      10 |
 | tetracenomycin_C                    |       8 |
 | streptothricin                      |       7 |
-| pleuromutilin_tiamulin              |       5 |
 | defensin                            |       5 |
+| pleuromutilin_tiamulin              |       5 |
 | tunicamycin                         |       4 |
 | puromycin                           |       3 |
 | mupirocin                           |       3 |
 | antibacterial_fatty_acid            |       2 |
+| edeine                              |       1 |
 | bicyclomycin                        |       1 |
 | factumycin                          |       1 |
-| edeine                              |       1 |
 
 Number of unique antibiotic classes: 30
 
@@ -235,26 +234,26 @@ Number of unique antibiotic classes: 30
 | Amphenicol                                                             |      41 |
 | Macrolide                                                              |      39 |
 | Oxazolidinone, Amphenicol                                              |      20 |
-| Nitroimidazole                                                         |      14 |
 | Streptogramin A                                                        |      14 |
+| Nitroimidazole                                                         |      14 |
 | Lincosamide, Streptogramin A, Pleuromutilin                            |      13 |
 | Lincosamide                                                            |      12 |
 | Rifamycin                                                              |      10 |
-| Oxazolidinone, Amphenicol, Lincosamide, Streptogramin A, Pleuromutilin |       7 |
 | Macrolide, Streptogramin B                                             |       7 |
+| Oxazolidinone, Amphenicol, Lincosamide, Streptogramin A, Pleuromutilin |       7 |
+| Pseudomonic acid                                                       |       3 |
 | Aminoglycoside, Quinolone                                              |       3 |
 | Steroid antibacterial                                                  |       3 |
-| Pseudomonic acid                                                       |       3 |
 | Lincosamide, Streptogramin A                                           |       3 |
 | Amphenicol, Oxazolidinone, Tetracycline                                |       2 |
-| Streptogramin B                                                        |       2 |
 | Amphenicol, Quinolone, Folate pathway antagonist                       |       2 |
 | Ionophores                                                             |       2 |
-| Pleuromutilin                                                          |       1 |
-| Macrolide, Tetracycline                                                |       1 |
-| Streptogramin A, Streptogramin B                                       |       1 |
-| Macrolide, Lincosamide, Streptogramin A, Streptogramin B, Tetracycline |       1 |
+| Streptogramin B                                                        |       2 |
 | Macrolide, Lincosamide                                                 |       1 |
+| Macrolide, Tetracycline                                                |       1 |
+| Macrolide, Lincosamide, Streptogramin A, Streptogramin B, Tetracycline |       1 |
+| Streptogramin A, Streptogramin B                                       |       1 |
+| Pleuromutilin                                                          |       1 |
 
 Number of unique antibiotic classes: 32
 
@@ -283,25 +282,25 @@ Number of unique antibiotic classes: 32
 | FEP     |      33 |
 | CST     |      21 |
 | SPT     |      12 |
-| OXY     |      11 |
 | MIN     |      11 |
-| bLac    |       9 |
+| OXY     |      11 |
 | CDR     |       9 |
+| bLac    |       9 |
 | SIS     |       9 |
 | ERY     |       8 |
 | CEF     |       6 |
-| AZM     |       5 |
 | SMZ     |       5 |
+| AZM     |       5 |
+| SDX     |       4 |
 | TET/AMP |       4 |
 | STX     |       4 |
-| SDX     |       4 |
 | MEM     |       3 |
 | STG     |       2 |
 | AMK     |       2 |
 | TYL     |       1 |
+| TZB     |       1 |
 | CIP     |       1 |
 | APR     |       1 |
 | STR     |       1 |
-| TZB     |       1 |
 
 Number of unique antibiotic classes: 42

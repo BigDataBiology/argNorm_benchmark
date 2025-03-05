@@ -15,7 +15,7 @@ def count_num_args():
 
     return output
 
-print(count_num_args())
+print(f'Tot num of ARGs: {count_num_args()}\n')
 
 def get_num_manual_curation():
     output = {}
@@ -26,7 +26,7 @@ def get_num_manual_curation():
 
     return output
 
-print(get_num_manual_curation())
+print(f'Num manual curation: {get_num_manual_curation()}\n')
 
 def get_num_unmapped_args():
     output = {}
@@ -35,11 +35,11 @@ def get_num_unmapped_args():
         mapping_table = get_aro_mapping_table(db)
         count = mapping_table['ARO'].isnull().sum()
 
-        output.update({db: count})
+        output.update({db: int(count)})
 
     return output
 
-print(get_num_manual_curation())
+print(f'Num unmapped ARGs: {get_num_unmapped_args()}\n')
 
 def get_num_unique_args():
     output = {}
@@ -52,4 +52,4 @@ def get_num_unique_args():
 
     return output
 
-print(get_num_unique_args())
+print(f'Num unique AROs: {get_num_unique_args()}\n')
